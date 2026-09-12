@@ -1,0 +1,20 @@
+- name : My First playbook
+  hosts: all
+  gather_facts: true
+
+
+  tasks:
+
+    - name : Say hello
+      ansible.builtin.debug:
+        msg: "Hello from Yadhardha"
+
+    - name: hostname
+      ansible.builtin.debug:
+        msg: "Hostname is {{ ansible_hostname}}"
+
+        
+
+
+
+  
